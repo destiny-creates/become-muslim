@@ -1,0 +1,25 @@
+package org.spongycastle.asn1.esf;
+
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+
+public class CommitmentTypeIndication extends ASN1Object {
+    /* renamed from: a */
+    private ASN1ObjectIdentifier f30789a;
+    /* renamed from: b */
+    private ASN1Sequence f30790b;
+
+    /* renamed from: e */
+    public ASN1Primitive mo5709e() {
+        ASN1EncodableVector aSN1EncodableVector = new ASN1EncodableVector();
+        aSN1EncodableVector.m27141a(this.f30789a);
+        if (this.f30790b != null) {
+            aSN1EncodableVector.m27141a(this.f30790b);
+        }
+        return new DERSequence(aSN1EncodableVector);
+    }
+}

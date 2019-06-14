@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleLarge" />
+    <ImageView android:id="@id/background_image_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shell_launch_background_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/big_logo_new_filled" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="200.0dip" android:maxHeight="200.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:id="@id/status_bar" android:background="@drawable/loading_status_bar_background" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:id="@id/status_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:id="@id/percentage_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

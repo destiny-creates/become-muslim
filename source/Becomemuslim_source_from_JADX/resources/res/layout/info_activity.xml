@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top" android:layout_gravity="top" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp" app:title="@c6277f/info_activity_name" app:theme="@c6278g/InfoToolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <ImageView android:id="@c6274c/app_icon_small" android:layout_width="36dp" android:layout_height="36dp" android:scaleType="fitXY" android:adjustViewBounds="false" android:cropToPadding="false" app:srcCompat="@c6276e/dev_icon"/>
+                <TextView android:textSize="20sp" android:gravity="center_vertical" android:id="@c6274c/app_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="@c6277f/info_app_name_placeholder" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:id="@c6274c/sdk_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@c6277f/info_sdk_version" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:id="@c6274c/experience_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@c6277f/info_id" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:id="@c6274c/published_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@c6277f/info_published_time" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:id="@c6274c/is_verified" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@c6277f/info_is_verified" android:layout_weight="1"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="10dp" android:weightSum="2">
+                <Button android:id="@c6274c/clear_data" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@c6277f/info_clear_data" android:layout_weight="1"/>
+                <Button android:id="@c6274c/toggle_manifest" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@c6277f/info_show_manifest" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView android:id="@c6274c/manifest" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

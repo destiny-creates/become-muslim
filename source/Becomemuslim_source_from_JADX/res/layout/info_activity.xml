@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:layout_gravity="top" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="4.0dip" app:title="@string/info_activity_name" app:theme="@style/InfoToolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageView android:id="@id/app_icon_small" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" android:cropToPadding="false" app:srcCompat="@mipmap/dev_icon" />
+                <TextView android:textSize="20.0sp" android:gravity="center_vertical" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/info_app_name_placeholder" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:id="@id/sdk_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/info_sdk_version" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:id="@id/experience_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/info_id" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:id="@id/published_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/info_published_time" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:id="@id/is_verified" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/info_is_verified" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:weightSum="2.0">
+                <Button android:id="@id/clear_data" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_clear_data" android:layout_weight="1.0" />
+                <Button android:id="@id/toggle_manifest" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_show_manifest" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:id="@id/manifest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

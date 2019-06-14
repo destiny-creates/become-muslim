@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5" android:versionName="NaN" package="com.gmail.dronesforaliving.howtobecomemuslim" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26"/>
+    <permission android:name="com.gmail.dronesforaliving.howtobecomemuslim.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.gmail.dronesforaliving.howtobecomemuslim.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application android:label="@c6277f/app_name" android:icon="@c6276e/ic_launcher" android:name="host.exp.exponent.MainApplication" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true">
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="host.exp.exponent.LauncherActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@c6278g/Theme_Exponent_Light" android:name="host.exp.exponent.experience.ExperienceActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@c6278g/Theme_Exponent_Splash" android:name="host.exp.exponent.MainActivity" android:launchMode="singleTop" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:scheme="expf8bdc6285ccd434db9f08dc875888ea9"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@c6278g/Theme_Exponent_Light" android:label="@c6277f/app_name" android:name="host.exp.exponent.experience.HomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@c6278g/Theme_Exponent_Light" android:label="@c6277f/app_name" android:name="host.exp.exponent.experience.TvActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="abi32_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="abi31_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="abi30_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="abi29_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="abi28_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="abi27_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="abi26_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:theme="@c6278g/Theme_Exponent_Dark" android:label="@c6277f/dev_activity_name" android:name="host.exp.exponent.ExponentDevActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@c6278g/Theme_Exponent_Light" android:name="host.exp.exponent.oauth.OAuthWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.gmail.dronesforaliving.howtobecomemuslim" android:path="oauthredirect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="host.exp.exponent.oauth.OAuthResultActivity"/>
+        <activity android:name="abi32_0_0.expo.modules.appauth.AppAuthBrowserActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="expo.modules.payments.stripe.RedirectUriReceiver" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="expo.modules.payments.stripe.0e4cbff4-6cf6-4c83-8737-50de7b10275a"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="abi31_0_0.expo.modules.payments.stripe.RedirectUriReceiver" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="abi31_0_0.expo.modules.payments.stripe"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="host.exp.exponent.chrometabs.ChromeTabsManagerActivity"/>
+        <activity android:theme="@c6278g/Theme_Exponent_Dark" android:name="host.exp.exponent.experience.ErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@c6278g/Theme_Exponent_Light" android:name="host.exp.exponent.experience.InfoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@c6277f/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@c6277f/app_name" android:name="com.facebook.ads.InterstitialAdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <service android:name="host.exp.exponent.ExponentIntentService" android:exported="false"/>
+        <receiver android:name="host.exp.exponent.referrer.InstallReferrerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.gmail.dronesforaliving.howtobecomemuslim"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="host.exp.exponent.gcm.ExponentGcmListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:name="host.exp.exponent.gcm.GcmRegistrationIntentService" android:exported="false"/>
+        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@c6273b/shell_notification_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <service android:name="host.exp.exponent.fcm.FcmRegistrationIntentService" android:exported="false"/>
+        <activity android:theme="@style/Base.Theme.AppCompat" android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAYqTdHhG3DNe08AcwZJcfIPOTD8_EgssQ"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb0"/>
+        <meta-data android:name="standaloneStripeScheme" android:value="0e4cbff4-6cf6-4c83-8737-50de7b10275a"/>
+        <activity android:name="com.masteratul.exceptionhandler.DefaultErrorScreen"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.gettipsi.stripe.OpenBrowserActivity" android:exported="false" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.gettipsi.stripe.RedirectUriReceiver" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="example"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.imagepicker.FileProvider" android:exported="false" android:authorities="com.gmail.dronesforaliving.howtobecomemuslim.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider" android:exported="false" android:authorities="com.gmail.dronesforaliving.howtobecomemuslim.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <receiver android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver" android:exported="false"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.gmail.dronesforaliving.howtobecomemuslim.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:name="expo.modules.taskManager.TaskBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="expo.modules.taskManager.TaskJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="expo.modules.appauth.AppAuthBrowserActivity" android:exported="false" android:launchMode="singleTask"/>
+        <activity android:theme="@style/StripeDefaultTheme" android:name="com.stripe.android.view.AddSourceActivity" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/StripeDefaultTheme" android:name="com.stripe.android.view.PaymentMethodsActivity"/>
+        <activity android:theme="@style/StripeDefaultTheme" android:name="com.stripe.android.view.PaymentFlowActivity"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity"/>
+        <activity android:name="com.facebook.ads.AudienceNetworkActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <meta-data android:name="onesignal_app_id" android:value=""/>
+        <meta-data android:name="onesignal_google_project_number" android:value="str:REMOTE"/>
+        <receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.gmail.dronesforaliving.howtobecomemuslim"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.NotificationOpenedReceiver"/>
+        <service android:name="com.onesignal.GcmIntentService"/>
+        <service android:name="com.onesignal.GcmIntentJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.onesignal.RestoreJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.onesignal.RestoreKickoffJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.onesignal.SyncService" android:stopWithTask="true"/>
+        <service android:name="com.onesignal.SyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.onesignal.PermissionsActivity"/>
+        <service android:name="com.onesignal.NotificationRestoreService"/>
+        <receiver android:name="com.onesignal.BootUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="net.openid.appauth.AuthorizationManagementActivity" android:exported="false" android:launchMode="singleTask"/>
+        <service android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService" android:exported="false"/>
+        <service android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService" android:exported="false"/>
+        <service android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.gmail.dronesforaliving.howtobecomemuslim.firebaseinitprovider" android:initOrder="100"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="com.facebook.marketing.internal.MarketingInitProvider" android:exported="false" android:authorities="com.gmail.dronesforaliving.howtobecomemuslim.MarketingInitProvider"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.gmail.dronesforaliving.howtobecomemuslim.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

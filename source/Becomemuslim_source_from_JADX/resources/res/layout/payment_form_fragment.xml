@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="400dp">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/card_512" android:adjustViewBounds="true" android:maxWidth="200dp" android:maxHeight="200dp"/>
+    <EditText android:id="@c2112c/number" android:nextFocusRight="@c2112c/expMonth" android:nextFocusDown="@c2112c/expMonth" android:maxLength="16" android:inputType="numberSigned" android:nextFocusForward="@c2112c/expMonth" style="@c6278g/CardNumber"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@c2112c/expMonth" android:nextFocusForward="@c2112c/expYear" style="@c6278g/ExpMonth"/>
+        <Spinner android:id="@c2112c/expYear" android:nextFocusForward="@c2112c/cvc" style="@c6278g/ExpYear"/>
+    </LinearLayout>
+    <EditText android:gravity="center" android:id="@c2112c/cvc" android:maxLength="3" android:inputType="numberSigned" android:nextFocusForward="@c2112c/currency" style="@c6278g/CVC"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Spinner android:id="@c2112c/currency" android:nextFocusForward="@c2112c/save" style="@c6278g/Currency"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center" android:id="@c2112c/save" style="@c6278g/Save"/>
+        <ProgressBar android:layout_gravity="center" android:id="@c2112c/buttonProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

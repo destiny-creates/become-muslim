@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:theme="@style/StripeToolBarStyle" android:id="@id/toolbar_as" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true" android:elevation="@dimen/toolbar_elevation" />
+    <ViewStub android:id="@id/widget_viewstub_as" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_as" />
+    <ProgressBar android:id="@id/progress_bar_as" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@id/toolbar_as" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+</RelativeLayout>

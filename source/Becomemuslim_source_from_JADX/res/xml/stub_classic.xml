@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devmarvel.creditcardentry.library.CreditCardForm android:id="@id/credit_card_form" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="8.0dip" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" app:include_zip="false" app:include_helper="true" app:cursor_color="@color/colorAccent" app:text_size="18.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

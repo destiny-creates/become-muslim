@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="@dimen/activity_horizontal_margin" android:paddingRight="8.0dip" android:paddingBottom="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/container" android:padding="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageFlippedCard" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/stp_card_form_front" android:adjustViewBounds="true" android:maxWidth="200.0dip" android:maxHeight="200.0dip" />
+        <ImageView android:id="@id/imageFlippedCardBack" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/stp_card_form_back" android:adjustViewBounds="true" android:maxWidth="200.0dip" android:maxHeight="200.0dip" android:alpha="0.0" />
+    </FrameLayout>
+    <TextView android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gettipsi_card_number_label" />
+    <com.devmarvel.creditcardentry.library.CreditCardForm android:id="@id/credit_card_form" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="8.0dip" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:include_zip="false" app:include_helper="true" app:cursor_color="@color/colorAccent" app:input_background="@color/transparent_background" app:text_size="18.0sp" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/buttonProgress" android:padding="@dimen/activity_horizontal_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

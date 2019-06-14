@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="10.0dip" android:weightSum="2.0" android:layout_below="@id/console_editText" android:layout_centerHorizontal="true">
+        <host.exp.exponent.views.ExponentImageButton android:textSize="15.0sp" android:textColor="@color/colorPrimaryDark" android:id="@id/console_home_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_home_white_36dp" android:layout_weight="1.0" />
+        <host.exp.exponent.views.ExponentImageButton android:textSize="15.0sp" android:textColor="@color/colorPrimaryDark" android:id="@id/console_reload_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_refresh_white_36dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/list_view" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>
